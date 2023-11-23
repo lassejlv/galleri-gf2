@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "concurrently --kill-others \"bunx vite\" \"bun run tailwind\"",
+    "tailwind": "tailwindcss -i ./src/css/index.css -o ./src/dist/index.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
