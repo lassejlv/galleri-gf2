@@ -34,7 +34,7 @@ container.addEventListener("click", (event) => {
 // Bygger HTML'en for hvert billede
 function buildCard(image, resetAll) {
   return `
-      <img src="/img/${image}.jpg" alt="${image}" class="h-1/2 rounded-sm cursor-pointer shadow-lg hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" 
+      <img src="./img/${image}.jpg" alt="${image}" class="h-1/2 rounded-sm cursor-pointer shadow-lg hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" 
         ${resetAll ? 'resetall="true"' : ""}
       />
     `;
