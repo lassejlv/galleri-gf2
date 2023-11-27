@@ -8,6 +8,13 @@ for (const image of images) {
   builds.push(buildCard(image, false));
 }
 
+// On load
+document.addEventListener("DOMContentLoaded", () => {
+  container.classList.remove("hidden");
+  document.getElementById("spinner").classList.add("hidden");
+})
+
+
 container.innerHTML = builds.join("");
 
 // Listen for alle billederne med classen "cursor-pointer"
