@@ -45,7 +45,7 @@ function handleImageClick(element) {
   // Finder "src" attributten på billedet
   const src = element.getAttribute("src");
   // Fjerner "/img/" og ".jpg" fra src attributten
-  const srcWithoutImg = src.replace("/img/", "").replace(".jpg", "");
+  const srcWithoutImg = src.replace("/img/", "").replace(".jpg", "").replace(".", "");
 
   builds = [];
   const image = buildCard(srcWithoutImg, true);
